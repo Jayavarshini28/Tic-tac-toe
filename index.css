@@ -1,0 +1,69 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #eed1fb;
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.gameContainer {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+#showContent {
+  font-family: cursive;
+  font-style: oblique;
+}
+
+.cellContainer {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+}
+
+.cell {
+  width: 75px;
+  height: 75px;
+  border: 2px solid;
+  border-color: rgb(194, 93, 248);
+  background-color: rgb(194, 93, 248);
+  margin: 2px;
+  border-radius: 15px;
+  line-height: 75px;
+  font-size: 50px;
+  cursor: pointer;
+  text-align: center;
+  font-family: cursive;
+  color: white;
+}
+
+.buttonContainer {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  align-content: center;
+  background-color: white;
+  border: 2px solid;
+  border-color: #8453eb;
+  border-radius: 8px;
+  font-size: larger;
+  font-family: monospace;
+  transition: background-color 0.3s ease;
+}
+
+button.active {
+  background-color: #8453eb;
+  color: white;
+}
